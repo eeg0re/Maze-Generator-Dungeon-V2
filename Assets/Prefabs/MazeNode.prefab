@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1310100972603129541}
   - component: {fileID: 6032187861229004473}
-  m_Layer: 0
-  m_Name: Square
+  m_Layer: 6
+  m_Name: Wall D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 735881664944788772}
   - component: {fileID: 5735229967980768973}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7156626092463318639}
   - component: {fileID: 1071230215018640097}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,7 +266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 332487813770223871}
   - component: {fileID: 6471705300889690801}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -350,7 +350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8673737869613442163}
   - component: {fileID: 8058825696837297609}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall U
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -433,6 +433,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8223386673332277057}
+  - component: {fileID: 3067653881286923248}
   m_Layer: 0
   m_Name: MazeNode
   m_TagString: Untagged
@@ -456,3 +457,19 @@ Transform:
   - {fileID: 7156626092463318639}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3067653881286923248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6631615859722365930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50a82cb4395724397986eafbd543549f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallL: {fileID: 2228235975622584188}
+  wallR: {fileID: 5415487610123598332}
+  wallU: {fileID: 5991393361019996743}
+  wallD: {fileID: 1508314329990606646}
