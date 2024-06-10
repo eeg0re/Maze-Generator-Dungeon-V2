@@ -6,8 +6,8 @@ public class CameraFollow : MonoBehaviour
 {
     public Transform target;
     public float smoothTime = 0.3f; 
-    public Vector3 offset;
-    private Vector3 velocity = Vector3.zero;
+    public Vector2 offset;
+    private Vector2 velocity = Vector2.zero;
 
     // Start is called before the first frame update
     void Start()
@@ -19,9 +19,11 @@ public class CameraFollow : MonoBehaviour
     void Update()
     {
         if(target != null){
-            Vector3 targetPos = target.position + offset;
+            Vector2 targetPos = ( new Vector2(target.position.x, target.position.y)) + offset;
+            Vector2 xyPos = Vector2.SmoothDamp(transform.position, targetPos, ref velocity, smoothTime);
 
-            transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, smoothTime);
+            transform.position = new Vector3(xyPos.x, xyPos.y, -50);
+
         }
         
     }
