@@ -203,9 +203,7 @@ public class MazeGenerator : MonoBehaviour
         // this will make the center room have only 1 entrance/exit
         List <int> rndList = new List<int> { 0, 1, 2, 3,};
         int startNode = rndList[Random.Range(0, rndList.Count)];
-        // spawning stuff ------------------------------
-        Vector2 startSpawn = new Vector2(centerNodes[startNode].gridPos.x, centerNodes[startNode].gridPos.y );
-        // ---------------------------------------------
+
         rndList.Remove(startNode);
         currentNode = centerNodes[startNode];
         foreach(int c in rndList){
@@ -283,6 +281,6 @@ public class MazeGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
