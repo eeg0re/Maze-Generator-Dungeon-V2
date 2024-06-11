@@ -348,6 +348,8 @@ MonoBehaviour:
   target: {fileID: 438270967}
   smoothTime: 0.3
   offset: {x: 0, y: 0}
+  minPos: {x: -10.7, y: -15}
+  maxPos: {x: 10.7, y: 15}
 --- !u!1001 &7440381846713156680
 PrefabInstance:
   m_ObjectHideFlags: 0
