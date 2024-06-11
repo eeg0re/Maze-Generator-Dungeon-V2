@@ -13,18 +13,25 @@ public class PlayerController : MonoBehaviour
 
     PlayerStates CurrentState{
         set{
-            currentState = value;
-            switch(currentState){
-                case PlayerStates.IDLE:
-                    animator.Play("Idle");
-                    break;
-                case PlayerStates.WALK:
-                    animator.Play("Walk");
-                    break;
-                case PlayerStates.ATTACK:
-                    animator.Play("Attack");
-                    break;
+            if(stateLock != true){
+                currentState = value;
+                switch(currentState){
+                        case PlayerStates.IDLE:
+                        canMove = true;
+                        animator.Play("Idle");
+                        break;
+                    case PlayerStates.WALK:
+                        canMove = true;
+                        animator.Play("Walk");
+                        break;
+                    case PlayerStates.ATTACK:
+                        animator.Play("Attack");
+                        stateLock = true;
+                        canMove = false;
+                        break;
             }
+            }
+            
         }
     }
 
@@ -36,6 +43,8 @@ public class PlayerController : MonoBehaviour
     SpriteRenderer spriteRenderer;
 
     PlayerStates currentState;
+    bool stateLock = false; 
+    bool canMove = true;
 
     // Start is called before the first frame update
     void Start()
@@ -54,7 +63,7 @@ public class PlayerController : MonoBehaviour
 
     void OnMove(InputValue value){
         moveInput = value.Get<Vector2>();
-        if(moveInput != Vector2.zero){
+        if(canMove && moveInput != Vector2.zero){
             CurrentState = PlayerStates.WALK;
 
             animator.SetFloat("Xmove", moveInput.x);
@@ -64,6 +73,15 @@ public class PlayerController : MonoBehaviour
             CurrentState = PlayerStates.IDLE;
         }
 
+    }
+
+    void OnFire(InputValue value){
+        CurrentState = PlayerStates.ATTACK;
+    }
+
+    void onAttackFinished(){
+        stateLock = false;
+        CurrentState = PlayerStates.IDLE;
     }
 
     // Update is called once per frame
