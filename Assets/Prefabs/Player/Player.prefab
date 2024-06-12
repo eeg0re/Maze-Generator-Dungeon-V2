@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7062770929558718314}
   - component: {fileID: 3818806326068549454}
+  - component: {fileID: 6196256212043324770}
   m_Layer: 0
   m_Name: Down HB
-  m_TagString: Untagged
+  m_TagString: HITBOX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,6 +83,18 @@ PolygonCollider2D:
       - {x: 0.36073154, y: -0.9338966}
       - {x: 0.32665855, y: -0.16779584}
   m_UseDelaunayMesh: 0
+--- !u!114 &6196256212043324770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5143935401165853174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f640a957e9b7c426ba1d30a74d11d8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7012026277433820088
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,9 +105,10 @@ GameObject:
   m_Component:
   - component: {fileID: 274388460477377780}
   - component: {fileID: 5346561440641870019}
+  - component: {fileID: 127884850417407226}
   m_Layer: 0
   m_Name: Up HB
-  m_TagString: Untagged
+  m_TagString: HITBOX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -164,6 +178,18 @@ PolygonCollider2D:
       - {x: 0.55940366, y: -0.33788037}
       - {x: 0.5650651, y: 0.4055149}
   m_UseDelaunayMesh: 0
+--- !u!114 &127884850417407226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7012026277433820088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f640a957e9b7c426ba1d30a74d11d8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7502684469025726012
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,9 +200,10 @@ GameObject:
   m_Component:
   - component: {fileID: 232159460742098272}
   - component: {fileID: 6983086057988003020}
+  - component: {fileID: 3057794337108068983}
   m_Layer: 0
   m_Name: Right HB
-  m_TagString: Untagged
+  m_TagString: HITBOX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -246,6 +273,18 @@ PolygonCollider2D:
       - {x: 0.5366983, y: -0.6898137}
       - {x: 0.8205005, y: -0.1734722}
   m_UseDelaunayMesh: 0
+--- !u!114 &3057794337108068983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7502684469025726012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f640a957e9b7c426ba1d30a74d11d8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8615609233473315181
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,7 +302,7 @@ GameObject:
   - component: {fileID: 4794545818187819967}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -475,9 +514,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1428723338458777564}
   - component: {fileID: 433508403655466982}
+  - component: {fileID: 6101838990355281607}
   m_Layer: 0
   m_Name: Left HB
-  m_TagString: Untagged
+  m_TagString: HITBOX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -547,3 +587,15 @@ PolygonCollider2D:
       - {x: 0.031503603, y: -0.47411263}
       - {x: -0.24097598, y: -0.03723991}
   m_UseDelaunayMesh: 0
+--- !u!114 &6101838990355281607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9113161198044111385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f640a957e9b7c426ba1d30a74d11d8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
