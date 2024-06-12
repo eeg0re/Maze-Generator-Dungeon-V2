@@ -25,6 +25,7 @@ public class EnemyController : MonoBehaviour
     }
 
     private void SetVelocity(){
+        // check which random direction the slime should move in and move it in that direction 
         if(targetDirection == "up"){
             rb.velocity = transform.up * speed;
         }
