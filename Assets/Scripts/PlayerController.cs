@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
                         stateLock = true;
                         canMove = false;
                         break;
-            }
+                }
             }
             
         }
